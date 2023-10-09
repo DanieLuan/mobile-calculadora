@@ -4,7 +4,7 @@
     <string name="appTitle">Calculadora IMD</string>
     <string name="calculadoraButton">Calculadora</string>
     <string name="notasButton">Notas</string>
-    <string name="footer">Feito por @DanieLuan ☕</string>
+    <string name="footer">Feito por Daniel Luan Lourenço ☕</string>
 
     <!-- fragment-notas-strings -->
     <string name="notas_fragmentTitle">Calcule sua média</string>
@@ -12,5 +12,5 @@
     <string name="notas_numberField2">Insira nota 02</string>
     <string name="notas_numberField3">Insira nota 03</string>
     <string name="notas_buttonCalcular">Calcular</string>
-    <string name="notas_situacao">Situação</string>
+    <string name="notas_situacao">Situação:</string>
 </resources>

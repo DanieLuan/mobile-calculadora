@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         buttonNotas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameLayoutMain, notasFragment);
                 transaction.commit();
