@@ -1,5 +1,6 @@
 package br.imd.imd_calculadora.fragments;
 
+import android.icu.number.Precision;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -55,12 +56,11 @@ public class NotasFragment extends Fragment {
         calcularButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewOnClick) {
-
                 if(editTextLength(nota2) == 0 && editTextLength(nota3) == 0) {
                     String situacaoAprovado, situacaoAprovadoPorNota;
-                    double numNota1 = editTextGetNumber(nota1);
-                    double notaFinalAprovado = (21 - numNota1)/2;
-                    double notaFinalAprovadoPorNota = (15 - numNota1)/2;
+                    float numNota1 = editTextGetNumber(nota1);
+                    float notaFinalAprovado = (21 - numNota1)/2;
+                    float notaFinalAprovadoPorNota = (15 - numNota1)/2;
                     situacaoAprovado = "Situação:\n" + "Para ser aprovado: U2: " + notaFinalAprovado + " U3: " + notaFinalAprovado;
                     if(numNota1 < 3){
                         situacaoAprovadoPorNota = "Não pode mais ser aprovado por nota.";
@@ -71,10 +71,10 @@ public class NotasFragment extends Fragment {
                 } else if (editTextLength(nota3) == 0) {
                     //TODO calculate nota3 to get approved
                     String situacaoAprovado, situacaoAprovadoPorNota;
-                    double numNota1 = editTextGetNumber(nota1);
-                    double numNota2 = editTextGetNumber(nota2);
-                    double notaFinalAprovado = (21 - numNota1 + numNota2)/2;
-                    double notaFinalAprovadoPorNota = (15 - numNota1 + numNota2)/2;
+                    float numNota1 = editTextGetNumber(nota1);
+                    float numNota2 = editTextGetNumber(nota2);
+                    float notaFinalAprovado = (21 - numNota1 + numNota2)/2;
+                    float notaFinalAprovadoPorNota = (15 - numNota1 + numNota2)/2;
                     situacaoAprovado = "Situação:\n" + "Para ser aprovado: U3: " + notaFinalAprovado;
                     if(notaFinalAprovadoPorNota > 10){
                         situacaoAprovado = "Situação:\nPrecisa fazer recuperação.";
@@ -87,27 +87,23 @@ public class NotasFragment extends Fragment {
                     situacao.setText(situacaoAprovado + "\n" + situacaoAprovadoPorNota);
                 } else if (editTextLength(nota1) != 0 && editTextLength(nota2) != 0 && editTextLength(nota3) != 0) {
                     String situacao;
-                    double numNota1 = editTextGetNumber(nota1);
-                    double numNota2 = editTextGetNumber(nota2);
-                    double numNota3 = editTextGetNumber(nota3);
-                    double mediaFinal = (numNota1+numNota2+numNota3)/3;
+                    float numNota1 = editTextGetNumber(nota1);
+                    float numNota2 = editTextGetNumber(nota2);
+                    float numNota3 = editTextGetNumber(nota3);
+                    float mediaFinal = Math.round((numNota1+numNota2+numNota3)/3* 2)/2;
                     if(mediaFinal >= 7) {
-                        situacao = "Situação:\nAprovado com média " + mediaFinal;
+                        situacao = "APROVADO com média " + mediaFinal;
                     } else if (mediaFinal >= 5) {
-                        situacao = "Situação:\nAprovado por nota com média " + mediaFinal;
+                        situacao = "APROVADO por nota com média " + mediaFinal;
                     } else {
-                        situacao = "Situação:\nReprovado com média " + mediaFinal;
+                        situacao = "REPROVADO com média " + mediaFinal;
                     }
                     showToastMensage(situacao);
+                } else if (editTextLength(nota1) == 0){
+                    showToastMensage("AVISO: É preciso colocar pelo menos a nota da unidade 1.");
                 } else {
                     showToastMensage("AVISO: Digite alguma nota.");
                 }
-
-                //int numNota1 = Integer.parseInt(nota1.getText().toString());
-                //int numNota2 = Integer.parseInt(nota2.getText().toString());
-                //int numNota3 = Integer.parseInt(nota3.getText().toString());
-
-
             }
         });
 
@@ -119,8 +115,8 @@ public class NotasFragment extends Fragment {
     private void showToastMensage(String text) {
         Toast.makeText(getActivity(), text, Toast.LENGTH_LONG).show();
     }
-    private double editTextGetNumber(EditText ed) {
-        return Double.parseDouble(ed.getText().toString());
+    private float editTextGetNumber(EditText ed) {
+        return Float.parseFloat(ed.getText().toString());
     }
     private int editTextLength(EditText ed) {
         return ed.getText().toString().length();
