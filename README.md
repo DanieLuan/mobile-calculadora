@@ -6,7 +6,7 @@ Aplicativo de calculadora desenvolvido para a disciplina de Desenvolvimento para
 
 O aplicativo foi desenvolvido usando a IDE Android Studio e a linguagem de programação Java.
 
-O projeto possui uma MainActivity onde dentro um FrameLayout que pode ter duas Fragments: CalculadoraFragment e CalculadoraIMDFragment. A fragment_calculadora é a calculadora padrão e a fragment_notas é a calculadora de notas.
+O projeto possui uma MainActivity onde dentro um FrameLayout que pode ter duas Fragments: fragment_calculadora e fragment_notas. A fragment_calculadora é a calculadora padrão e a fragment_notas é a calculadora de notas.
 
 ## Funcionalidades
 
