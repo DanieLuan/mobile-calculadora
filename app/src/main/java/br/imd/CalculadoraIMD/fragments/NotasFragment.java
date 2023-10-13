@@ -1,4 +1,4 @@
-package br.imd.imd_calculadora.fragments;
+package br.imd.CalculadoraIMD.fragments;
 
 import android.os.Bundle;
 
@@ -13,8 +13,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import br.imd.imd_calculadora.R;
-import br.imd.imd_calculadora.util.InputFilterMinMax;
+import br.imd.CalculadoraIMD.R;
+import br.imd.CalculadoraIMD.util.InputFilterMinMax;
 
 public class NotasFragment extends Fragment {
     private EditText nota1;

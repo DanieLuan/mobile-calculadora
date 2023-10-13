@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "br.imd.imd_calculadora"
+    namespace = "br.imd.CalculadoraIMD"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "br.imd.imd_calculadora"
+        applicationId = "br.imd.CalculadoraIMD"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

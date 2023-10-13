@@ -1,4 +1,4 @@
-package br.imd.imd_calculadora.activities;
+package br.imd.CalculadoraIMD.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import br.imd.imd_calculadora.R;
-import br.imd.imd_calculadora.fragments.CalculadoraFragment;
-import br.imd.imd_calculadora.fragments.NotasFragment;
+import br.imd.CalculadoraIMD.R;
+import br.imd.CalculadoraIMD.fragments.CalculadoraFragment;
+import br.imd.CalculadoraIMD.fragments.NotasFragment;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "imd-calculadora"
+rootProject.name = "CalculadoraIMD"
 include(":app")
  

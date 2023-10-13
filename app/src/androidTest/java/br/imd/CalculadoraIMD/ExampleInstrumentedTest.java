@@ -1,4 +1,4 @@
-package br.imd.imd_calculadora;
+package br.imd.CalculadoraIMD;
 
 import android.content.Context;
 

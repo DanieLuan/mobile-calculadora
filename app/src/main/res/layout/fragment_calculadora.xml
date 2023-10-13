@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline6"
@@ -26,7 +27,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="72dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/white"
+            android:background="@color/white"
             android:ems="10"
             android:includeFontPadding="false"
             android:inputType="numberDecimal|numberSigned"
@@ -44,7 +45,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="28dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/white"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="numberDecimal|numberSigned"
             android:textAlignment="textEnd"
@@ -66,21 +67,35 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline6">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonDelete"
                 android:layout_width="260dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:text="@string/calc_delete" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_delete"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonDivide"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:text="@string/calc_divide" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_divide"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -101,33 +116,60 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:text="@string/calc_seven" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_seven"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonEight"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:text="@string/calc_eight" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_eight"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonNine"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_nine" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_nine"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonMultiply"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:text="@string/calc_multiply" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_multiply"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -148,35 +190,60 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_four" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_four"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonFive"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_five" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_five"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonSix"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_six" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_six"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonMinus"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:text="@string/calc_minus" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_minus"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -197,36 +264,60 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_one" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_one"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonTwo"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_two" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_two"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonThree"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_three" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_three"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonPlus"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_plus" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_plus"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -247,18 +338,30 @@
                 android:layout_width="260dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_zero" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_zero"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonEquals"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-                android:background="@color/blue"
-                android:backgroundTint="@color/blue"
-                android:text="@string/calc_equals" />
+                android:background="@drawable/button"
+                android:shadowColor="@color/lightBlue"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:text="@string/calc_equals"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 

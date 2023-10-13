@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".activities.MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -43,12 +44,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonCalculadora"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/blue"
-        android:backgroundTint="@color/blue"
+        android:background="@drawable/header_button"
         android:text="@string/calculadoraButton"
         android:textColor="@color/white"
         android:textSize="14sp"
@@ -57,12 +57,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonNotas"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/blue"
-        android:backgroundTint="@color/blue"
+        android:background="@drawable/header_button"
         android:text="@string/notasButton"
         android:textColor="@color/white"
         android:textSize="14sp"

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="blackTransp">#3C000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue">#FF3FB4EB</color>
+    <color name="lightBlue">#FF3FB4EB</color>
+    <color name="blue">#1583B6</color>
+    <color name="darkBlue">#0870C0</color>
     <color name="orange">#FFEB9D3F</color>
     <color name="gray">#DDDDDD</color>
     <color name="grayDark">#686868</color>

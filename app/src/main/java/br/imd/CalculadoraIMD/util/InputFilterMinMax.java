@@ -1,4 +1,4 @@
-package br.imd.imd_calculadora.util;
+package br.imd.CalculadoraIMD.util;
 
 import android.text.InputFilter;
 import android.text.Spanned;
