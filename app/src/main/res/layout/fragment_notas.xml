@@ -5,6 +5,7 @@
     android:id="@+id/notasFragmentFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:outlineProvider="none"
     tools:context=".fragments.NotasFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,21 +37,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="225dp" />
+            app:layout_constraintGuide_begin="214dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="335dp" />
+            app:layout_constraintGuide_begin="317dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="436dp" />
+            app:layout_constraintGuide_begin="379dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline11"
@@ -73,23 +74,28 @@
 
         <TextView
             android:id="@+id/textSituation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
+            android:layout_width="365dp"
+            android:layout_height="136dp"
             android:text="@string/notas_situacao"
-            android:textSize="16sp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
         <EditText
             android:id="@+id/textNumberNota1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
+            android:background="@color/gray"
+            android:backgroundTint="@color/gray"
             android:ems="10"
+            android:hapticFeedbackEnabled="false"
             android:hint="@string/notas_numberField1"
             android:inputType="numberDecimal|numberSigned"
+            android:outlineProvider="background"
+            android:paddingLeft="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline7" />
@@ -97,12 +103,16 @@
         <EditText
             android:id="@+id/textNumberNota2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
+            android:background="@color/gray"
+            android:backgroundTint="@color/gray"
             android:ems="10"
+            android:hapticFeedbackEnabled="false"
             android:hint="@string/notas_numberField2"
             android:inputType="numberDecimal|numberSigned"
+            android:paddingLeft="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline8" />
@@ -110,12 +120,16 @@
         <EditText
             android:id="@+id/textNumberNota3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
+            android:background="@color/gray"
+            android:backgroundTint="@color/gray"
             android:ems="10"
+            android:hapticFeedbackEnabled="false"
             android:hint="@string/notas_numberField3"
             android:inputType="numberDecimal|numberSigned"
+            android:paddingLeft="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline9" />
